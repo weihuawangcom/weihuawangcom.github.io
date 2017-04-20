@@ -1,14 +1,4 @@
-<html><head><link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../iron-icon/iron-icon.html">
-<link rel="import" href="../paper-behaviors/paper-inky-focus-behavior.html">
-<link rel="import" href="../paper-styles/default-theme.html">
-
-
-
-</head><body><dom-module id="paper-icon-button">
-  <template strip-whitespace="">
-    <style>
-      :host {
+<html><head><link rel="import" href="../polymer/polymer.html"><link rel="import" href="../iron-icon/iron-icon.html"><link rel="import" href="../paper-behaviors/paper-inky-focus-behavior.html"><link rel="import" href="../paper-styles/default-theme.html"></head><body><dom-module id="paper-icon-button"><template strip-whitespace=""><style>:host {
         display: inline-block;
         position: relative;
         padding: 8px;
@@ -54,12 +44,4 @@
       iron-icon {
         --iron-icon-width: 100%;
         --iron-icon-height: 100%;
-      }
-    </style>
-
-    <iron-icon id="icon" src="[[src]]" icon="[[icon]]" alt$="[[alt]]"></iron-icon>
-  </template>
-
-  <script>Polymer({is:"paper-icon-button",hostAttributes:{role:"button",tabindex:"0"},behaviors:[Polymer.PaperInkyFocusBehavior],properties:{src:{type:String},icon:{type:String},alt:{type:String,observer:"_altChanged"}},_altChanged:function(t,e){var r=this.getAttribute("aria-label");r&&e!=r||this.setAttribute("aria-label",t)}});</script>
-</dom-module>
-</body></html>
+      }</style><iron-icon id="icon" src="[[src]]" icon="[[icon]]" alt$="[[alt]]"></iron-icon></template><script>Polymer({is:"paper-icon-button",hostAttributes:{role:"button",tabindex:"0"},behaviors:[Polymer.PaperInkyFocusBehavior],properties:{src:{type:String},icon:{type:String},alt:{type:String,observer:"_altChanged"}},_altChanged:function(t,e){var r=this.getAttribute("aria-label");r&&e!=r||this.setAttribute("aria-label",t)}});</script></dom-module></body></html>
